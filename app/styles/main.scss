@@ -4,14 +4,17 @@ $icon-font-path: '../fonts/';
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+/*//BOOT Perfect circle CLASS: ;*/
+/*.img-circle {
+  border-radius: 50%; // set radius in percents
+}*/
 
 
 
 body {
-    /*margin-top: 50px;  Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+  /*margin-top: 50px;  Required padding for .navbar-fixed-top. 
+  Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
-
-
 
 nav.navbar {
   background-color: transparent;
@@ -22,33 +25,19 @@ nav.navbar {
     border: none;
   }
 
-/*LOGO IMAGE*/
-  a.brand-logo {
-/*    position: absolute;*/
-    border: 2px solid #000;
-    display: inline-block;
-/*    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 100;*/
-  }
-
 /*NAV ITEMS*/
   ul.nav {
-    
-
     li a {
       @media (min-width: 992px) {
        color: #000;
       }
     }
-
   }
-
-          
 }
 
-.header-image {
+
+
+header.header-image {
     display: block;
     width: 100%;
     text-align: center;
@@ -60,82 +49,132 @@ nav.navbar {
     position: relative;
     z-index: 1;
 
-    a.brand-logo {
-      width: 180px;
+
+  .headline {
+      padding: 80px 0;
+
+    &:before {
+      content: '';
       position: absolute;
-      top:50%;
-      left: 50%;
-      margin: 0 auto;
-      padding: 0;
-    }
+      z-index: 2;
+      height: 50%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      bottom: 0;
 
-    .headline {
-      padding: 0;
-
-      &:before {
-        content: '';
-        position: absolute;
-        z-index: 2;
-        height: 50%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        bottom: 0;
-
-        background: rgba(242, 228, 22, 0.6);
-        /*opacity: 0.9;*/
+      background: rgba(242, 228, 22, 0.6);
+      /*opacity: 0.9;*/
 
         @media (min-width: 992px) {
           height: 100%;
           width: 50%;
         }
-
       }
 
-      .header-right, .header-left {
-          padding-top: 120px;
-          padding-bottom: 120px;
-          color: #fff;
-          position: relative;
-          z-index: 3;
-      }
+/* ../.container-fluid/.row/.col-.. */
+    
+    .row {
+      position: relative;
+    }
 
-
-      button.call-to-act {
-        background-color: transparent;
-        border: 3px solid #fff;
+    .header-right, .header-left {
+        padding-top: 120px;
+        padding-bottom: 120px;
         color: #fff;
+        position: relative;
+        z-index: 3;
+        text-align: center;
+
+
+        h1 {
+          margin: 0;
+          padding: 0;
+          /*vertical-align: middle;*/
+        }
+
+        h2 {
+          margin-top: 0;
+          margin-bottom: 40px;
+        }
+
+        div {
+          width: 80%;
+          margin: 0 auto;
+
+        }
+        
       }
-    }
-}
-/*
-@media(max-width:1200px) {
-    .headline h1 {
-        font-size: 140px;
-    }
-
-    .headline h2 {
-        font-size: 63px;
-    }
-
-}
-
-@media(max-width:991px) {
-    .headline h1 {
-        font-size: 105px;
-    }
-
-    .headline h2 {
-        font-size: 50px;
-    }
-
-}
-
-@media(max-width:768px) {
   
+    .header-left button.call-to-act {
+      background-color: transparent;
+      border: 3px solid #fff;
+      color: #fff;
+    }
+
+
+  /* floaty logo */
+    .brand-logo {
+      background: white;
+      position: absolute;
+      margin-top: -0.65em;
+      left: 50%;
+      top: 50%;
+      margin-left: -30px;
+      width: 60px;
+      height: 60px;
+      vertical-align: middle;
+      text-align: center;
+      font-size: 3.05em;
+      z-index: 2;
+      padding: 5.2px 5.2px 5.2px 5.2px;
+      padding: 0.325rem 0.325rem 0.325rem 0.325rem;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      -o-border-radius: 4px;
+      border-radius: 4px;
+    }   
+    /* end .headline */
+  }
+/* end header.header-image */
 }
 
-@media(max-width:668px) {
+@media (max-width: 768px) {
+  .container {
+      margin: 0 15px;
+  }
+}
+
+
+
+.featurette {
+  overflow: hidden;
+
+  .pull-left  {
+    margin-right: 3%;
+    margin-bottom: 3%;
+  }
+
+  .pull-right  {
+    margin-left: 3%;
+    margin-bottom: 3%;
+  }
+
+  .featurette-image {    
+    
+        /* keep featurette images remain half width on small screens, 
+      but still alows text to flow around*/
+    @media (max-width: 991px) {
+      max-width: 50%;
+    }
+
+  }
+}
+
+
+
+@media(min-width:668px) {
     .headline h1 {
         font-size: 70px;
     }
@@ -146,7 +185,7 @@ nav.navbar {
 
 }
 
-@media(max-width:640px) {
+@media(min-width:640px) {
     .headline {
         padding: 75px 0 25px 0;
     }
@@ -163,7 +202,7 @@ nav.navbar {
 @media(max-width:375px) {
 
 }
-*/
+
 
 
 
