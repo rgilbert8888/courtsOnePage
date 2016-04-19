@@ -15,7 +15,7 @@
     <!-- endbuild -->
 
     <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main2.css">
     <!-- endbuild -->
     
     <!-- build:js scripts/vendor/modernizr.js -->
@@ -60,35 +60,23 @@
     </nav>
 
     <!-- Full Width Image Header -->
-    <header class="header-image">
-
-        <div class="headline">
-          
-          <div class="container-fluid">
-            
-            <div class="row">
-              
-              <div class="brand-logo"></div>
-
-              <div class="col-md-6 header-right">
-                <div>
-                  <!-- <h1>ONE PAGE AWESOME</h1> -->
-                  <img src="images/courts-white.png" alt="Courts Logo">
+    <header class="header-blocks">
+        <!-- <div class="container-fluid"> -->
+            <div class="header-left item">
+                <div class="item-content">
+                    <img src="images/courts-white.png" class="img-responsive">
+                    <h1>Courts Machinery</h1>
                 </div>
-
-              </div>
-              
-              <div class="col-md-6 header-left">
-                <div>
-                  <h2>And another thing.</h2>
-                  <button type="submit" class="btn-lg call-to-act">Get a Quote</button>
+            </div>
+            <div class="header-right item">
+                <div class="item-content">
+                    <h2>Assisting your equipment needs since 1981<!-- 
+                    <h2>Supplying Quality New & Used Construction Equipment Since 1981 Since 1981 --></h2>
+                    <!-- </h2> -->
+                    <button type="submit" class="btn-lg call-to-act">Get a Quote</button>
                 </div>
-              </div>
-
-          </div>
-           
-        </div>
-      </div>
+            </div>
+        <!-- </div> -->
     </header>
 
     <!-- Page Content -->
@@ -98,10 +86,16 @@
 
         <!-- First Featurette -->
         <div class="featurette" id="about">
-            <img class="featurette-image img-responsive pull-right" src="http://placehold.it/500x500">
-            <h2 class="featurette-heading">This First Heading
-                <span class="text-muted">Will Catch Your Eye</span>
-            </h2>
+            <div class="pull-right image-holder">
+                <img class="featurette-image img-responsive" src="images/ieda-logo.png">            
+                <img class="featurette-image img-responsive" src="images/felling-logo.jpg">    
+            </div>
+
+
+            <h3 class="featurette-heading">Proudly Representing
+                 <span class="text-muted">Quallity</span>
+                <!-- <span class="text-muted"></span> -->
+            </h3>
             <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         </div>
 
@@ -109,11 +103,20 @@
 
         <!-- Second Featurette -->
         <div class="featurette" id="services">
-            <img class="featurette-image img-responsive pull-left" src="http://placehold.it/500x500">
-            <h2 class="featurette-heading">The Second Heading
-                <span class="text-muted">Is Pretty Cool Too.</span>
-            </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <div class="pull-left image-holder">
+                <img class="featurette-image img-responsive" src="images/felling-truck.png">            
+<!--                 <img class="featurette-image img-responsive" src="images/felling-logo.jpg">     -->
+            </div>
+
+
+            <h3 class="featurette-heading">Our Exceptional
+                 <span class="text-muted">New &amp; Used Equipment</span>
+                <!-- <span class="text-muted"></span> -->
+            </h3>
+            <p class="lead">At Courts Machinery, we stock a variety of new, used, and rental construction equipment. To see some of our latest inventory, 
+                <a href="#">visit our listings!</a>
+            </p>
+            
         </div>
 
         <hr class="featurette-divider">
